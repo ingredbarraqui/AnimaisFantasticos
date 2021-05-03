@@ -13,7 +13,7 @@ ul{
 }
 
 body{
-    background: #faf6ed ;
+    background: #ffffff ;
     color: #222;
     -webkit-font-smoothing: antialiased;
     display: grid;
@@ -22,7 +22,7 @@ body{
 
 .menu{
     grid-column: 3/5;
-    background: #fb5;
+    background: #e91e63;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -87,7 +87,7 @@ body{
     width: 40px;
     height: 10px;
     margin-right: 10px;
-    background: #fb5;
+    background: #e91e63;
 }
 
 .animais-lista{
@@ -101,13 +101,13 @@ body{
 }
 
 .animais-lista::-webkit-scrollbar-thumb{
-    background-color: #fb5;
-    border-left: 4px solid #faf6ed;
-    border-right: 4px solid #faf6ed;
+    background-color: #e91e63;
+    border-left: 4px solid #ffffff;
+    border-right: 4px solid #ffffff;
 }
 
 .animais-lista::-webkit-scrollbar-track{
-    background-color: #faf6ed;
+    background-color: #ffffff;
 }
 
 .animais-descricao{
