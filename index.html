@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"> </script>
     <title>Animais fantasticos</title>
+    <script>
+        document.documentElement.className += " js"
+    </script>
 </head>
 <nav class="menu">
     <ul>
@@ -21,7 +24,7 @@
 
 <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais<br> fantásticos</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista js-tabmenu">
         <li>
             <img src="img/imagem1.jpg" alt="Raposa">
         </li>
@@ -42,7 +45,7 @@
         </li>
     </ul>
 
-    <div class="animais-descricao">
+    <div class="animais-descricao js-tabcontent">
         <section>
             <h2>Raposa</h2>
             <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.</p>
