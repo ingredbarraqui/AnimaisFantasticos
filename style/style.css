@@ -22,7 +22,7 @@ body{
 
 .menu{
     grid-column: 3/5;
-    background: #e91e63;
+    background: #fb5;
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -87,7 +87,7 @@ body{
     width: 40px;
     height: 10px;
     margin-right: 10px;
-    background: #e91e63;
+    background: #fb5;
 }
 
 .animais-lista{
@@ -105,7 +105,7 @@ body{
 }
 
 .animais-lista::-webkit-scrollbar-thumb{
-    background-color: #e91e63;
+    background-color: #fb5;
     border-left: 4px solid #ffffff;
     border-right: 4px solid #ffffff;
 }
@@ -237,4 +237,30 @@ body{
 }
 
 
+.js .js-acordion dd{
+  display: none;
+}
+.js-acordion dt::after{
+    content: " ⤵";
+    margin-left: 10px;
+}
 
+.js-acordion dt.ativo::after{
+    content: " ⤴";
+}
+
+.js-acordion dd.ativo{
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
