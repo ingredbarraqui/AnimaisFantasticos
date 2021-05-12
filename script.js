@@ -65,5 +65,32 @@ function initScrollSuave() {
         link.addEventListener("click", scrollToSection)
     })
 }
-initScrollSuave()
+initScrollSuave();
 
+
+// function Menu(seletorMenu) {
+//     const menuLista = document.querySelector(seletorMenu)
+//     console.log(menuLista)
+//     this.ativo = function (classes) {
+//         menuLista.classList.add(classes)
+//     }
+// }
+
+// const novoMenu = new Menu("ul");
+// novoMenu.ativo("aaaaah");
+
+// const novoMenu2 = new Menu("li")
+// novoMenu2.ativo("dois")
+
+function all(elemento) {
+    const elementoSelecionado = document.querySelectorAll(elemento)
+    console.log(elementoSelecionado)
+    this.ativo = function (classe) {
+        elementoSelecionado.forEach((item) => {
+            item.classList.add(classe)
+        })
+    }
+}
+
+const elementoSelecionadoThis = new all("img")
+elementoSelecionadoThis.ativo("nice!!")
