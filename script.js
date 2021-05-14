@@ -68,6 +68,8 @@ function initScrollSuave() {
 initScrollSuave();
 
 
+
+/* constructor function */
 // function Menu(seletorMenu) {
 //     const menuLista = document.querySelector(seletorMenu)
 //     console.log(menuLista)
@@ -77,7 +79,7 @@ initScrollSuave();
 // }
 
 // const novoMenu = new Menu("ul");
-// novoMenu.ativo("aaaaah");
+// novoMenu.ativo("teste");
 
 // const novoMenu2 = new Menu("li")
 // novoMenu2.ativo("dois")
@@ -94,3 +96,15 @@ function all(elemento) {
 
 const elementoSelecionadoThis = new all("img")
 elementoSelecionadoThis.ativo("nice!!")
+
+function Animais(animal, raça) {
+    this.animal = animal
+    this.raça = raça
+}
+
+Animais.prototype.latir = function () {
+    return "Cachorro latiu"
+}
+
+const novoAnimal = new Animais("cachorro", "raça x")
+console.log(Animais.prototype)
